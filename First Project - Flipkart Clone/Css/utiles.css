@@ -1,0 +1,16 @@
+.flex-all-center{
+    display:flex;
+    justify-content:center;
+    align-item:center;
+}
+
+nav button{
+    padding: 3px;
+    margin: 0 13px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.basic-margin{
+    margin:10px;
+}
