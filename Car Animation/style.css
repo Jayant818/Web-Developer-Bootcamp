@@ -1,0 +1,89 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sky{
+    width:100%;
+    height:100vh;
+    background:url('background.jpg') no-repeat;
+
+}
+.trees{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    background:url('trees.png');
+    background-size: cover;
+    top: -153px;
+}
+
+.track{
+    width:800vw;
+    height: 255px;
+background: url('track.png');
+position: absolute;
+bottom: 0px;
+animation:car_move linear 12s infinite;
+}
+
+.lamo{
+    position: absolute;
+    width: 221px;
+    height: 74px;
+    background: url('car_body.png') no-repeat;
+    background-size: contain;
+    left: 24%;
+    top: 48%;
+    animation:shake 1s infinite;
+
+}
+
+.wheel2{
+    position: absolute;
+    width: 39px;
+    height: 41px;
+    background: url('car_wheel_left.png');
+    background-size: cover;
+    top: 23px;
+    left: 28px;
+    animation: car_wheel linear .16s infinite;
+}
+
+
+.wheel1{
+    position: absolute;
+width: 39px;
+height: 41px;
+background: url('car_wheel_left.png');
+background-size: cover;
+left: 137px;
+top: 25px;
+animation: car_wheel linear .16s infinite ;
+}
+
+@keyframes car_wheel{
+    100%{
+        transform: rotate(360deg);
+
+    }
+}
+
+@keyframes car_move{
+    100%{
+        transform: translateX(-500vw);
+    }
+}
+
+@keyframes shake{
+    0%{
+        transform:translateY(4px);
+    }
+    50%{
+        transform:translateY(-4px);
+    }
+    100%{
+        transform:translateX(4px);
+    }
+}
