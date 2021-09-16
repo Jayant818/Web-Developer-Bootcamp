@@ -1,0 +1,29 @@
+.content-contact{
+    display: block;
+    margin-top: 30px;
+    position: relative;
+    height:100vh;
+    
+}
+    
+.content-contact::before{
+    content: "";
+    background: url('../img/11.svg');
+    position: absolute;
+    width: 100%;
+     height: inherit;  /* Parent ki height ko copy kar lega */
+    opacity: 0.15;
+    border-radius: 12px;
+    z-index: -1;
+    
+}
+
+.form-box input,textarea{
+    width: 45vw;
+padding: 0px 5px;
+margin: 8px 0px;
+font-size: 16px;
+font-family: var(--font1);
+border: 2px solid #dfab4c;
+border-radius: 5px;
+}

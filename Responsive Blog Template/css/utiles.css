@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700&family=Roboto:wght@300&display=swap');
+
+
+/* Utility files for containing some Most used codes */
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Defining a Variable*/
+:root {
+    --main-bg-color: brown;
+    --font1: 'Baloo Bhaina 2', cursive;
+    --font2: 'Roboto', sans-serif;
+}
+
+.font-1 {
+    font-family: var(--font1);
+}
+
+.font-2 {
+    font-family: var(--font2);
+}
+
+.max-width1 {
+    width: 80vw;
+}
+
+.max-width2 {
+    width: 60vw;
+}
+
+.m-auto {
+    margin: auto
+}
+
+.mx-1{
+    margin:32px auto;
+}

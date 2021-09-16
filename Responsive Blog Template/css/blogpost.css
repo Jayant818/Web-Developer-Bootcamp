@@ -1,0 +1,44 @@
+/* IN this For setting the Full Width Image but Cropped From down 
+we have first made his width 100% 
+then in  Its parent tag we have set the height and then set overflow Hidden and then so that the Img will 
+take The space that was assigned to Its Parent tag. 
+*/
+
+.post-img {
+    height: 420px;
+    overflow: hidden;   /* Overflow Hidden Means =>  Overflow ko hide kar deta hai  */
+}
+.post-img img{
+    width:100%;
+}
+
+.blog-post-content h1{
+    align-items: center;
+    display:flex;
+    justify-content: center;
+padding: 20px;
+}
+
+.row{
+    display: flex;
+}
+
+.home-article1 {
+    display: flex;
+    margin-top: 8px;
+    flex-direction: column;
+    margin:0px auto;
+    
+    
+}
+
+.author-detail{
+display: flex;
+justify-content: space-between;  /* !Important in case of Navbar */
+margin-bottom: 17px;
+
+}
+
+.content-right2{
+    margin-right: 110px;
+}

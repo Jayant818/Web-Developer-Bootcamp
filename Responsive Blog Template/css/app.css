@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700&family=Roboto:wght@300&display=swap');
+/* In this the Fonts are Imported through the Google Fonts So to use it all the css files we have to place this above other css files */
+
+.navbar {
+    width: 100%;
+    height: auto;
+    /* background-color: aqua; */
+    display: flex;
+     justify-content: space-between; /* Spaced-between Use => */
+    align-items: center;
+}
+
+.navbar span img{
+    height: 85px;
+position: relative;  /* Relative Position Use =>  */
+top: 0px;
+}
+
+.nav-left {
+    display: flex;
+    margin: 19px;
+}
+
+span {
+    font-family: var(--font1);  /* Using the Variables so that it can be used Everywhere*/
+    /* margin: 30px; */
+    padding-top: 7px;
+    font-size: 30px;
+    /* font-family: 'Baloo bhaina 2',cursive; */
+}
+
+/* Flex-box Container par lagta hai */
+.nav-left ul {
+    font-family: var(--font2);
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    margin: 7px;
+}
+
+.nav-left ul li {
+    padding: 0 5px;
+}
+
+.nav-left ul a {
+    text-decoration: none;
+    color: black;
+    margin: 3px;
+    font-size: 18px;
+}
+
+.nav-left ul a:hover {
+    color: brown;
+    cursor: pointer;  /* Cursor Pointer Means that Jab ham button pe leke jayege tab wo pointer ban jayega*/ 
+}
+
+.nav-right {
+    margin: 10px;
+}
+
+input {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-family: var(--font2);
+}
+
+.btn {
+    margin: 4px;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-family: var(--font2);
+    transition: 0.3s all ease-in-out;    /* Transition Study For Making changes During Hovering But it must be Included in the btn class not in the btn:hover*/
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(224, 72, 72);
+}
+
+.content {
+    /* width: 80vh; */
+    height: 100%;
+    /* background-color: rgb(191, 147, 235); */
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+    /* z-index: 2; */
+
+}
+
+/* For Displaying the Background Image */
+.content::after {
+    content: "";
+    background: url('../img/11.svg');
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+    border-radius: 12px;
+    z-index: -1;
+
+}
+
+.content-left {
+    font-family: var(--font1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.content-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-right img {
+    height: 215px;
+    /* width: 197px; */
+    border: 1px solid black;
+    border-radius: 200px;
+    margin: 11px;
+}
+
+
+
+
+.home-articles {
+    margin: 22px auto;
+background-color: rgba(238, 211, 175, 0.32);
+position:relative;
+}
+
+.set-year{
+    width: 100px;
+    height: 100px;
+     position: absolute;  /* Position absolute means wo dusre element ke saath relative ho gayi hai agar koi bhi element nhi milta to root element (HTML) ke saath relative ho jata hai */
+    right: 113px;
+    top: 75px;
+    
+}
+
+.home-article {
+    display: flex;
+    /* border: 1px solid black; */
+    margin-top: 12px;
+    margin-bottom: 4px;
+    /* background-color: rgb(245, 175, 128, 0.5); */
+}
+
+
+.article-content {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-content p a {
+    text-decoration: none;
+    color: black;
+}
+
+.article-img {
+    margin-right: 32px;
+    margin-left: 10px;
+    /* height: 175px; */
+}
+
+.article-img img {
+    height: 175px;
+}
+
+.footer {
+    /* width: 60vh; */
+    height: 33px;
+    /* background-color: black; */
+}
+
+footer p {
+    background-color: rgb(243, 135, 135);
+    color: black;
+    display: grid;   /* Display Grid Means =>   */
+     justify-items: center; /* Horizontal - Center */
+     align-items: center;  /*  Vertical-center */
+}
