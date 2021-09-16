@@ -1,0 +1,28 @@
+/* Navbar */
+#logo {
+    margin: 8px -6px;
+}
+
+#navbar ul li a {
+    padding: 1px -11px;
+    display: block;
+    margin: -17px 17px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
+/* Home/Head */
+
+
+/* Services-container */
+#services {
+    flex-direction: column;
+}
+
+/* Clients-section  */
+
+/* Contacts  */
+
+/* Footer */
